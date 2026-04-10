@@ -167,7 +167,7 @@ const beforeAvatarUpload = (file) => {
  }
  return true
 }
-const businessId = ref('')
+let businessId = ref('')
 const handleUploadRequest = async ({file}) =>{
   businessId.value = crypto.randomUUID()
 
